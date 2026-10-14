@@ -1,0 +1,14 @@
+{
+    "name": "opus-tools",
+    "description": "Open-source software engineering workflows for Claude Code.",
+    "owner": {
+        "name": "Opus Orchestrator contributors"
+    },
+    "plugins": [
+        {
+            "name": "opus-orchestrator",
+            "source": "./plugins/opus-orchestrator",
+            "description": "Opus-led planning, agent delegation, implementation and testing."
+        }
+    ]
+}
