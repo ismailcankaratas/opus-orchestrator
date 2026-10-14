@@ -1,0 +1,17 @@
+{
+  "name": "opus-orchestrator",
+  "displayName": "Opus Orchestrator",
+  "version": "0.1.0",
+  "description": "Opus-led software development orchestration with specialist agents, task ownership, testing, and reviews.",
+  "author": {
+    "name": "Opus Orchestrator contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "multi-agent",
+    "orchestration",
+    "software-development",
+    "code-review"
+  ]
+}

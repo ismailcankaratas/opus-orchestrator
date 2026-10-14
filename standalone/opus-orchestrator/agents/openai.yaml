@@ -1,0 +1,4 @@
+interface:
+  display_name: "Opus Orchestrator"
+  short_description: "Plan, delegate, test, and review software tasks"
+  brand_color: "#6855D9"

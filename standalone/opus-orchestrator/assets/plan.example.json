@@ -1,0 +1,80 @@
+{
+  "goal": "Add a simple read-only settings page to an existing web app",
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Inspect existing patterns",
+      "agent": "scout",
+      "depends_on": [],
+      "files_owned": [],
+      "acceptance_criteria": [
+        "Identify the settings route and data source"
+      ],
+      "verification": [
+        "Cite existing files and routes"
+      ],
+      "parallel_group": null,
+      "risk": "low",
+      "approval_required": false
+    },
+    {
+      "id": "T02",
+      "title": "Implement page view",
+      "agent": "frontend-engineer",
+      "depends_on": [
+        "T01"
+      ],
+      "files_owned": [
+        "apps/web/src/pages/settings/"
+      ],
+      "acceptance_criteria": [
+        "Page shows existing settings"
+      ],
+      "verification": [
+        "Run frontend typecheck"
+      ],
+      "parallel_group": "build-a",
+      "risk": "low",
+      "approval_required": false
+    },
+    {
+      "id": "T03",
+      "title": "Add targeted API contract tests",
+      "agent": "test-engineer",
+      "depends_on": [
+        "T01"
+      ],
+      "files_owned": [
+        "apps/api/test/settings.test.ts"
+      ],
+      "acceptance_criteria": [
+        "Read endpoint contract is covered"
+      ],
+      "verification": [
+        "Run API test suite"
+      ],
+      "parallel_group": "build-a",
+      "risk": "low",
+      "approval_required": false
+    },
+    {
+      "id": "T04",
+      "title": "Review integrated diff",
+      "agent": "code-reviewer",
+      "depends_on": [
+        "T02",
+        "T03"
+      ],
+      "files_owned": [],
+      "acceptance_criteria": [
+        "Review concrete edge cases"
+      ],
+      "verification": [
+        "Report prioritized findings"
+      ],
+      "parallel_group": null,
+      "risk": "low",
+      "approval_required": false
+    }
+  ]
+}
