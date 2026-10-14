@@ -60,7 +60,7 @@ For a small issue:
 
 The skill is **explicitly user-invoked** and does not silently orchestrate every coding request. The main session's model is selected by `claude --model opus`; the plugin does not force a model switch.
 
-## Install from GitHub (after this repository is published)
+## Install from GitHub
 
 Substitute your actual GitHub account or organization for `YOUR_GITHUB_USERNAME`:
 
